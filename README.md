@@ -1,12 +1,5 @@
 # Image Analysis Backend (FastAPI)
 
-## How to Run
-
-
-
-
-
-##  Setup
 
 1. **Clone the repository**
 
@@ -14,6 +7,30 @@
 git clone <repo_url>
 cd veefyed-image-uploads
 ```
+
+
+## How to Run (options)
+
+1. **Docker Run**
+2. **Local setup**
+
+
+## Option 1. Docker Run ( make sure docker is installed )
+1. **Build the Docker image**
+
+```bash
+docker build -t veefyed-image-analysis-backend .
+```
+
+2. **Run application using .env**
+```bash
+docker run --env-file .env -p 8000:8000 image-analysis-backend
+```
+
+
+## Option 2. Local Setup & Run
+
+
 
 2. **Create a virtual environment**
 
@@ -56,5 +73,6 @@ pip install -r requirements.txt
 ```
 6. **Run application**
 ```bash
-uvicorn app.main:app --reload --host $HOST --port $PORT
+uvicorn app.main:app --reload --host localhost --port 8000
 ```
+
