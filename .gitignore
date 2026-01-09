@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+
+# Virtual environment
+venv/
+
+# artifacts
+/app/storage/images
+
+# Logs
+app/logs/
+
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+# Pytest cache
+.pytest_cache/
+
+# Uvicorn
+*.pid
